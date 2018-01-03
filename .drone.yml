@@ -2,6 +2,9 @@ workspace:
   base: /srv/app
   path: src/github.com/gopad/gopad-docs
 
+branches:
+  - master
+
 pipeline:
   cache-restore:
     image: plugins/s3-cache:1
@@ -10,3 +13,122 @@ pipeline:
     restore: true
     when:
       local: false
+
+  frontend-prepare:
+    image: webhippie/nodejs:latest
+    pull: true
+    commands:
+      - yarn install
+
+  frontend-lint:
+    image: webhippie/nodejs:latest
+    pull: true
+    group: frontend
+    commands:
+      - yarn run lint
+
+  frontend-build:
+    image: webhippie/nodejs:latest
+    pull: true
+    group: frontend
+    commands:
+      - yarn run build
+
+  backend-build:
+    image: webhippie/hugo:latest
+    pull: true
+    group: backend
+    commands:
+      - make build
+
+  docker-amd64:
+    image: plugins/docker:17.05
+    pull: true
+    group: docker
+    secrets: [ docker_username, docker_password ]
+    repo: gopad/gopad-docs
+    auto_tag: true
+    when:
+      event: [push, tag]
+      branch: master
+
+  docker-i386:
+    image: plugins/docker:17.05
+    pull: true
+    group: docker
+    secrets: [ docker_username, docker_password ]
+    repo: gopad/gopad-docs
+    dockerfile: Dockerfile.i386
+    auto_tag: true
+    auto_tag_suffix: i386
+    when:
+      event: [push, tag]
+      branch: master
+
+  docker-arm:
+    image: plugins/docker:17.05
+    pull: true
+    group: docker
+    secrets: [ docker_username, docker_password ]
+    repo: gopad/gopad-docs
+    dockerfile: Dockerfile.arm
+    auto_tag: true
+    auto_tag_suffix: arm
+    when:
+      event: [push, tag]
+      branch: master
+
+  docker-arm64:
+    image: plugins/docker:17.05
+    pull: true
+    group: docker
+    secrets: [ docker_username, docker_password ]
+    repo: gopad/gopad-docs
+    dockerfile: Dockerfile.arm64
+    auto_tag: true
+    auto_tag_suffix: arm64
+    when:
+      event: [push, tag]
+      branch: master
+
+  docker-microbadger:
+    image: plugins/webhook:1
+    pull: true
+    secrets:
+      - source: microbadger_token
+        target: plugin_urls
+    when:
+      event: [ push, tag ]
+      branch: [ master ]
+
+  cache-rebuild:
+    image: plugins/s3-cache:1
+    pull: true
+    secrets: [ cache_s3_endpoint, cache_s3_access_key, cache_s3_secret_key ]
+    rebuild: true
+    mount:
+      - node_modules
+    when:
+      local: false
+      event: [ push ]
+      branch: [ master ]
+
+  cache-flush:
+    image: plugins/s3-cache:1
+    pull: true
+    secrets: [ cache_s3_endpoint, cache_s3_access_key, cache_s3_secret_key ]
+    flush: true
+    flush_age: 14
+    when:
+      local: false
+      event: [ push ]
+      branch: [ master ]
+
+  notify-matrix:
+    image: plugins/matrix:1
+    pull: true
+    secrets: [ matrix_roomid, matrix_userid, matrix_accesstoken ]
+    when:
+      local: false
+      events: [ push, tag ]
+      status: [ changed, failure ]

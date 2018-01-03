@@ -1,0 +1,59 @@
+{
+  "private": true,
+  "name": "gopad-docs",
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "https://github.com/gopad/gopad-docs#readme",
+  "license": "",
+  "author": {
+    "name": "Thomas Boerger",
+    "email": "thomas@webhippie.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gopad/gopad-docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gopad/gopad-docs/issues",
+    "email": "thomas@webhippie.de"
+  },
+  "config": {},
+  "scripts": {
+    "clean": "rimraf static/",
+    "lint": "eslint assets/ webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "watch": "cross-env NODE_ENV=development webpack -d -w"
+  },
+  "main": "webpack.config.js",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.2.3",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.12.1",
+    "eslint-plugin-import": "^2.8.0",
+    "exports-loader": "^0.6.4",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.9.1"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1"
+  },
+  "keywords": [
+    "gopad"
+  ]
+}
