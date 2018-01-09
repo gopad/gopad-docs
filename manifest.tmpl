@@ -1,4 +1,4 @@
-image: {{repo.owner}}/{{repo.name}}:{{#if build.tag}}{{trimPrefix build.tag "v"}}{{else}}latest{{/if}}
+image: gopad/gopad-docs:{{#if build.tag}}{{trimPrefix build.tag "v"}}{{else}}latest{{/if}}
 {{#if build.tags}}
 tags:
 {{#each build.tags}}
@@ -7,27 +7,27 @@ tags:
 {{/if}}
 manifests:
 	-
-		image: {{repo.owner}}/{{repo.name}}:{{#if build.tag}}{{trimPrefix build.tag "v"}}-{{/if}}amd64
+		image: gopad/gopad-docs:{{#if build.tag}}{{trimPrefix build.tag "v"}}-{{/if}}amd64
 		platform:
 			architecture: amd64
 			os: linux
 	-
-		image: {{repo.owner}}/{{repo.name}}:{{#if build.tag}}{{trimPrefix build.tag "v"}}-{{/if}}i386
+		image: gopad/gopad-docs:{{#if build.tag}}{{trimPrefix build.tag "v"}}-{{/if}}i386
 		platform:
 			architecture: 386
 			os: linux
 	-
-		image: {{repo.owner}}/{{repo.name}}:{{#if build.tag}}{{trimPrefix build.tag "v"}}-{{/if}}arm64
+		image: gopad/gopad-docs:{{#if build.tag}}{{trimPrefix build.tag "v"}}-{{/if}}arm64
 		platform:
 			architecture: arm64
 			os: linux
 	-
-		image: {{repo.owner}}/{{repo.name}}:{{#if build.tag}}{{trimPrefix build.tag "v"}}-{{/if}}arm
+		image: gopad/gopad-docs:{{#if build.tag}}{{trimPrefix build.tag "v"}}-{{/if}}arm
 		platform:
 			architecture: arm
 			os: linux
 	-
-		image: {{repo.owner}}/{{repo.name}}:{{#if build.tag}}{{trimPrefix build.tag "v"}}-{{/if}}windows
+		image: gopad/gopad-docs:{{#if build.tag}}{{trimPrefix build.tag "v"}}-{{/if}}windows
 		platform:
 			architecture: amd64
 			os: windows
