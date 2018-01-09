@@ -96,7 +96,7 @@ pipeline:
     image: plugins/manifest:1
     pull: true
     secrets: [ docker_username, docker_password ]
-    spec: manifest.tmpl
+    spec: manifest.yml
     auto_tag: true
     ignore_missing: true
     when:
