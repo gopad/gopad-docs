@@ -48,6 +48,7 @@ pipeline:
     secrets: [ docker_username, docker_password ]
     repo: gopad/gopad-docs
     auto_tag: true
+    auto_tag_suffix: amd64
     when:
       event: [push, tag]
       branch: master
@@ -65,19 +66,6 @@ pipeline:
       event: [push, tag]
       branch: master
 
-  docker-arm:
-    image: plugins/docker:17.05
-    pull: true
-    group: docker
-    secrets: [ docker_username, docker_password ]
-    repo: gopad/gopad-docs
-    dockerfile: Dockerfile.arm
-    auto_tag: true
-    auto_tag_suffix: arm
-    when:
-      event: [push, tag]
-      branch: master
-
   docker-arm64:
     image: plugins/docker:17.05
     pull: true
@@ -91,6 +79,30 @@ pipeline:
       event: [push, tag]
       branch: master
 
+  docker-arm:
+    image: plugins/docker:17.05
+    pull: true
+    group: docker
+    secrets: [ docker_username, docker_password ]
+    repo: gopad/gopad-docs
+    dockerfile: Dockerfile.arm
+    auto_tag: true
+    auto_tag_suffix: arm
+    when:
+      event: [push, tag]
+      branch: master
+
+  docker-manifests:
+    image: plugins/manifest:1
+    pull: true
+    secrets: [ docker_username, docker_password ]
+    spec: manifest.tmpl
+    auto_tag: true
+    ignore_missing: true
+    when:
+      event: [ push, tag ]
+      branch: master
+
   docker-microbadger:
     image: plugins/webhook:1
     pull: true
@@ -99,7 +111,7 @@ pipeline:
         target: plugin_urls
     when:
       event: [ push, tag ]
-      branch: [ master ]
+      branch: master
 
   cache-rebuild:
     image: plugins/s3-cache:1
@@ -111,7 +123,7 @@ pipeline:
     when:
       local: false
       event: [ push ]
-      branch: [ master ]
+      branch: master
 
   cache-flush:
     image: plugins/s3-cache:1
@@ -122,7 +134,7 @@ pipeline:
     when:
       local: false
       event: [ push ]
-      branch: [ master ]
+      branch: master
 
   notify-matrix:
     image: plugins/matrix:1
