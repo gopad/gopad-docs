@@ -11,10 +11,6 @@ trim_trailing_whitespace = true
 indent_style = tab
 indent_size = 4
 
-[*.go]
-indent_style = tab
-indent_size = 4
-
 [*.{html,tmpl}]
 indent_style = tab
 indent_size = 4
