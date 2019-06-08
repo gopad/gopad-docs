@@ -1,7 +1,6 @@
 # Gopad: Documentation
 
-[![Build Status](http://cloud.drone.io/api/badges/gopad/gopad-docs/status.svg)](http://cloud.drone.io/gopad/gopad-docs)
-[![Stories in Ready](https://badge.waffle.io/gopad/gopad-api.svg?label=ready&title=Ready)](http://waffle.io/gopad/gopad-api)
+[![Build Status](https://cloud.drone.io/api/badges/gopad/gopad-docs/status.svg)](https://cloud.drone.io/gopad/gopad-docs)
 [![Join the Matrix chat at https://matrix.to/#/#gopad:matrix.org](https://img.shields.io/badge/matrix-%23gopad%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#gopad:matrix.org)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6012a233d1e04981bb8d078510cacb2b)](https://www.codacy.com/app/gopad/gopad-docs?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gopad/gopad-docs&amp;utm_campaign=Badge_Grade)
 
