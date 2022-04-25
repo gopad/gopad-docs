@@ -1,0 +1,4 @@
+/ /usage/overview
+
+http://gopad-docs.netlify.app/* https://gopad.eu/:splat 301!
+https://gopad-docs.netlify.app/* https://gopad.eu/:splat 301!

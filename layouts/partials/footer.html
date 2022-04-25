@@ -9,13 +9,16 @@
 
 					<div class="col-lg-6 love">
 						<p>
-							Made with <i class="ion-md-heart" aria-hidden="true"></i> in Germany
+							Made with <i class="bi bi-heart-fill"></i> in Germany
 						</p>
 					</div>
 				</div>
 			</div>
 		</footer>
 
-		<script src="scripts/docs.js"></script>
+		{{ $bootstrap := resources.Get "vendor/bootstrap.js" }}
+		{{ $docs := resources.Get "docs.js" }}
+		{{ $js := slice $bootstrap $docs | resources.Concat "docs.js" | resources.Minify | resources.Fingerprint "sha512" }}
+		<script type="text/javascript" src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 	</body>
 </html>
