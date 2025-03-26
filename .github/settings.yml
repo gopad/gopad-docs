@@ -1,7 +1,7 @@
 ---
 repository:
   name: gopad-docs
-  description: "Gopad: Documentation"
+  description: Documentation for the Gopad project
   homepage: https://gopad.eu
   topics: gopad, etherpad, docs, documentation, hugo
 
