@@ -1,8 +1,10 @@
 ---
 baseurl: /
-languageCode: en-us
+locale: en-us
 title: Gopad
-disableKinds: RSS
+
+disableKinds:
+  - rss
 
 params:
   Description: Etherpad for markdown with Go
