@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/gopad/gopad-docs/compare/v1.0.0...v1.1.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency hugo-extended to v0.165.0 ([#277](https://github.com/gopad/gopad-docs/issues/277)) ([aa6e89e](https://github.com/gopad/gopad-docs/commit/aa6e89e45bac2edfa0fb004e9986d82b9fc0fa70))
+* **patch:** update dependency pre-commit to v4.6.2 ([#276](https://github.com/gopad/gopad-docs/issues/276)) ([2c3303e](https://github.com/gopad/gopad-docs/commit/2c3303e51af8383479e11d7f3e1d02b75482a04c))
+
 ## 1.0.0 (2026-08-10)
 
 ### Features
