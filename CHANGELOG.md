@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/gopad/gopad-docs/compare/v1.1.0...v1.1.1) (2026-09-07)
+
+### Dependencies
+
+* **patch:** update dependency postcss to v8.5.27 ([#281](https://github.com/gopad/gopad-docs/issues/281)) ([5ca69bf](https://github.com/gopad/gopad-docs/commit/5ca69bfedb8cd07ba3b8cc8f2ff1607721c0698c))
+* **patch:** update dependency postcss to v8.5.28 ([#282](https://github.com/gopad/gopad-docs/issues/282)) ([a32d37d](https://github.com/gopad/gopad-docs/commit/a32d37de225990eb127bef5dda790f49ee02dd67))
+
 ## [1.1.0](https://github.com/gopad/gopad-docs/compare/v1.0.0...v1.1.0) (2026-08-17)
 
 ### Dependencies
