@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.0](https://github.com/gopad/gopad-docs/compare/v1.1.1...v2.0.0) (2026-09-14)
+
+### Dependencies
+
+* **major:** update dependency postcss-cli to v12 ([#285](https://github.com/gopad/gopad-docs/issues/285)) ([f807642](https://github.com/gopad/gopad-docs/commit/f807642b4aba54e0ad52851c7707ec418f694e6f))
+* **mise:** update dependency hugo-extended to v0.166.0 ([#286](https://github.com/gopad/gopad-docs/issues/286)) ([7ad1d4a](https://github.com/gopad/gopad-docs/commit/7ad1d4af0c22857ebba04b01aeef7cc5dc7cee6d))
+* **mise:** update dependency prek to v0.5.3 ([#287](https://github.com/gopad/gopad-docs/issues/287)) ([4a21512](https://github.com/gopad/gopad-docs/commit/4a21512f1b502a3c3cbb545a47d9697c3ca3ee3d))
+* **patch:** update dependency autoprefixer to v10.5.5 ([#284](https://github.com/gopad/gopad-docs/issues/284)) ([2d3abc6](https://github.com/gopad/gopad-docs/commit/2d3abc6d00dcff8dd73461a4b96dc5e428202c51))
+* **patch:** update dependency autoprefixer to v10.5.6 ([#288](https://github.com/gopad/gopad-docs/issues/288)) ([fbdc598](https://github.com/gopad/gopad-docs/commit/fbdc598b746fcad4633f1c6a22d6d25dff0fe0cf))
+
 ## [1.1.1](https://github.com/gopad/gopad-docs/compare/v1.1.0...v1.1.1) (2026-09-07)
 
 ### Dependencies
