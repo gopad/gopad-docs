@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/gopad/gopad-docs/compare/v2.0.0...v2.1.0) (2026-09-21)
+
+### Dependencies
+
+* **minor:** update dependency autoprefixer to v10.6.0 ([#290](https://github.com/gopad/gopad-docs/issues/290)) ([880fcf9](https://github.com/gopad/gopad-docs/commit/880fcf98e1345efe6c9f7689077383ffea14a5c9))
+* **patch:** update dependency autoprefixer to v10.6.1 ([#291](https://github.com/gopad/gopad-docs/issues/291)) ([9ef4e80](https://github.com/gopad/gopad-docs/commit/9ef4e80bb31fd4d5edc899df3547409d0c9d9178))
+
 ## [2.0.0](https://github.com/gopad/gopad-docs/compare/v1.1.1...v2.0.0) (2026-09-14)
 
 ### Dependencies
