@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.2](https://github.com/gopad/gopad-docs/compare/v2.1.1...v2.1.2) (2026-10-19)
+
+### Dependencies
+
+* **mise:** update dependency hugo-extended to v0.168.0 ([#302](https://github.com/gopad/gopad-docs/issues/302)) ([c0865ec](https://github.com/gopad/gopad-docs/commit/c0865ecc740dfb213f6ac2dfa6afc160a236edf4))
+* **mise:** update dependency prek to v0.5.6 ([#305](https://github.com/gopad/gopad-docs/issues/305)) ([3f1007d](https://github.com/gopad/gopad-docs/commit/3f1007d16ff57328c9a6a9d6777745c3f394a410))
+* **patch:** update dependency postcss to v8.5.30 ([#303](https://github.com/gopad/gopad-docs/issues/303)) ([4b765f6](https://github.com/gopad/gopad-docs/commit/4b765f6f275b2ead1000dbb7cf351ac41ab8384e))
+
 ## [2.1.1](https://github.com/gopad/gopad-docs/compare/v2.1.0...v2.1.1) (2026-10-12)
 
 ### Dependencies
