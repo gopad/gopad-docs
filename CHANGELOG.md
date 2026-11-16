@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.1.5](https://github.com/gopad/gopad-docs/compare/v2.1.4...v2.1.5) (2026-11-16)
+
+* automated release update [skip ci] ([b672f4d](https://github.com/gopad/gopad-docs/commit/b672f4d28108d12c434a40fcc4f585b595b1a0b5))
+* **locks:** lock file maintenance ([#316](https://github.com/gopad/gopad-docs/issues/316)) ([e5d0d20](https://github.com/gopad/gopad-docs/commit/e5d0d2075191f861d6e4c7d228855913a1fcafc0))
+* **locks:** lock file maintenance ([#319](https://github.com/gopad/gopad-docs/issues/319)) ([7e713c9](https://github.com/gopad/gopad-docs/commit/7e713c944ed5220551bee56198647cf0e138b83f))
+
+### Dependencies
+
+* **mise:** update dependency prek to v0.5.10 ([#315](https://github.com/gopad/gopad-docs/issues/315)) ([ab2dbd7](https://github.com/gopad/gopad-docs/commit/ab2dbd712fb4ef07144920cace4df5744e4330a6))
+* **mise:** update dependency prek to v0.5.11 ([#320](https://github.com/gopad/gopad-docs/issues/320)) ([a04f015](https://github.com/gopad/gopad-docs/commit/a04f0159a303296d8648409ca5377140fdb62a5d))
+* **patch:** update dependency bootstrap to v5.3.9 ([#318](https://github.com/gopad/gopad-docs/issues/318)) ([c49ccad](https://github.com/gopad/gopad-docs/commit/c49ccadcea7fb66bfcb102b82d6b4db704e471d6))
+
 ## [2.1.4](https://github.com/gopad/gopad-docs/compare/v2.1.3...v2.1.4) (2026-11-02)
 
 ### Dependencies
