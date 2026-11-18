@@ -12,6 +12,10 @@ params:
   Website: https://gopad.eu
   Github: gopad
 
+security:
+  allowContent:
+    - '! ^text/org$'
+
 module:
   mounts:
     - source: content
