@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.2.0](https://github.com/gopad/gopad-docs/compare/v2.1.5...v2.2.0) (2026-11-23)
+
+* **locks:** lock file maintenance ([#323](https://github.com/gopad/gopad-docs/issues/323)) ([29e260d](https://github.com/gopad/gopad-docs/commit/29e260d335fc4cd0e49ac4d7098312b456c6cd33))
+
+### Dependencies
+
+* **minor:** update dependency autoprefixer to v10.7.0 ([#322](https://github.com/gopad/gopad-docs/issues/322)) ([c6357e2](https://github.com/gopad/gopad-docs/commit/c6357e2530a8297530883630a352505f6e35f1dd))
+* **mise:** update dependency hugo-extended to v0.170.0 ([#317](https://github.com/gopad/gopad-docs/issues/317)) ([e01d2f4](https://github.com/gopad/gopad-docs/commit/e01d2f44a5a92a936279ad6455102005c08f398b))
+* **patch:** update dependency postcss to v8.5.33 ([#321](https://github.com/gopad/gopad-docs/issues/321)) ([765ba34](https://github.com/gopad/gopad-docs/commit/765ba34fb51abefbc2c54df5aaa184036f06bc6f))
+
 ## [2.1.5](https://github.com/gopad/gopad-docs/compare/v2.1.4...v2.1.5) (2026-11-16)
 
 * automated release update [skip ci] ([b672f4d](https://github.com/gopad/gopad-docs/commit/b672f4d28108d12c434a40fcc4f585b595b1a0b5))
